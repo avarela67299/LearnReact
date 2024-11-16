@@ -19,3 +19,27 @@ body {
 .headerHome h1 {
     color: rgb(55, 29, 79);
 }
+
+/*  */
+
+.cardSection {
+    padding: 40px 20px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    background-color: rgb(227, 229, 255);
+}
+.cardProps {
+    width: 250px;
+    height: 420px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0px 8px 8px hsla(0, 0%, 0%, 0.576);
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    box-sizing:border-box;
+}
+.cardProps img {
+    width: 70%;
+}
