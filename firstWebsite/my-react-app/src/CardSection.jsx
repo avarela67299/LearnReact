@@ -26,6 +26,7 @@ export default function CardSection () {
                 isStudent={true}
                 description="This is a description of the student Santiago for his presentation card"
             />
+            <CardProps></CardProps>
         </div>
     );
 }
