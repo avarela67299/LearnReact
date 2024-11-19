@@ -4,7 +4,7 @@ import student2 from './assets/pexels-doquyen-1520760.jpg'
 import student3 from './assets/pexels-manei-2690323.jpg'
 export default function CardSection () {
     return(
-        <div className ="cardSection">
+        <div className ="cardSection content">
             <CardProps 
                 image={student1}
                 name ="Alejandro" 
