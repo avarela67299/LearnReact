@@ -2,7 +2,17 @@
 
 import React, { useState } from "react";
 
-export default function ConditionalSection() {
+export default function ConditionalSection(props) {
+  
+  let conditionalContent;
+  if(props.conditional){
+    conditionalContent = <h2>this is true: conditional rendering</h2>
+  }
+  else{
+    conditionalContent = <h2>this is false: conditional rendering</h2> 
+
+  }
+  
   // Step 1: Use state to track the toggle's status
   const [isToggled, setIsToggled] = useState(false);
 
@@ -30,6 +40,13 @@ export default function ConditionalSection() {
       {/* Example: Conditional Content */}
       {isToggled && <p>The toggle is ON! 🎉</p>}
       {!isToggled && <p>The toggle is OFF. 💡</p>}
-    </div>
+      <hr></hr>
+      {conditionalContent}
+      <p> 
+        JSX only allows expressions, not statements. Use the ternary operator for simple conditions.
+        For more complex logic, use a variable outside the return statement to store the result of the condition and render the variable inside JSX.
+        if-else is a statement, not a value, so it must be handled outside JSX or rewritten using the ternary operator. The return can be inside the if-else.
+      </p>
+</div>
   );
 }

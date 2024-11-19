@@ -7,15 +7,12 @@ import ConditionalSection from './ConditionalSection.jsx'
 function App() {
 
   return(
-    <>
-      
+    <>  
       <Header></Header>
       <Card></Card>
       <Card></Card>
-      <hr/>
       <CardSection/>
-      <hr/>
-      <ConditionalSection></ConditionalSection>
+      <ConditionalSection conditional={false}/>
       <Footer/>
     </>
   )
