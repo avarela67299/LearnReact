@@ -45,7 +45,7 @@ export default function ConditionalSection(props) {
       <p> 
         JSX only allows expressions, not statements. Use the ternary operator for simple conditions.
         For more complex logic, use a variable outside the return statement to store the result of the condition and render the variable inside JSX.
-        if-else is a statement, not a value, so it must be handled outside JSX or rewritten using the ternary operator. The return can be inside the if-else.
+        if-else is a statement, not a value, so it must be handled outside JSX or rewritten using the ternary operator. The return can be inside the if-else. For a null output you can use &&.
       </p>
 </div>
   );
