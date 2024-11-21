@@ -1,15 +1,17 @@
-let myVar = 1;
+
 export default function MyButton(){
+
+    const handleClick = () => console.log("you clicked");
+    const handleClick2 = (name) => console.log(`stop clicking ${name}`);
+
   
     
     return(
         <>
-        <button onClick={console.log(myVar+= 1)}>Click Me</button>
-        <h2>{myVar}</h2>
+        <button onClick={handleClick}>Click Me</button>
+        <button onClick={() => handleClick2("lucas")}>click with parameters</button>
         </>
     );
 }
 
-function whenClick(){
-   return console.log(myVar+= 1);
-}
+
