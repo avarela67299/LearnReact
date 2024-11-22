@@ -4,6 +4,7 @@ import Card from './Card.jsx'
 import CardSection from './CardSection.jsx'
 import ConditionalSection from './ConditionalSection.jsx'
 import MyButton from './Button.jsx'
+import ChangeName from './LearnUseState.jsx' 
 
 function App() {
 
@@ -14,7 +15,9 @@ function App() {
       <Card></Card>
       <CardSection/>
       <ConditionalSection conditional={false}/>
-      <MyButton></MyButton>
+      <MyButton/>
+      <ChangeName></ChangeName>
+
       <Footer/>
     </>
   )

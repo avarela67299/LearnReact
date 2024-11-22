@@ -10,6 +10,7 @@ export default function MyButton(){
         <>
         <button onClick={handleClick}>Click Me</button>
         <button onClick={() => handleClick2("lucas")}>click with parameters</button>
+        <p>Check the console to see changes</p>
         </>
     );
 }
