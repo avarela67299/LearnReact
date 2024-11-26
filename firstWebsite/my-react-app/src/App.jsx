@@ -5,6 +5,7 @@ import CardSection from './CardSection.jsx'
 import ConditionalSection from './ConditionalSection.jsx'
 import MyButton from './Button.jsx'
 import ChangeName from './LearnUseState.jsx' 
+import PizzaOrder from './Pizza.jsx'
 
 function App() {
 
@@ -17,7 +18,7 @@ function App() {
       <ConditionalSection conditional={false}/>
       <MyButton/>
       <ChangeName></ChangeName>
-
+      <PizzaOrder/>
       <Footer/>
     </>
   )
